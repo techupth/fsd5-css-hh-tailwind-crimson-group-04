@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body class="bg-slate-200 flex flex-col justify-center items-center h-screen">
+    <div class="bg-white rounded-xl flex flex-col p-10">
+      <div class="text-zinc-600 text-xl">Login to Website</div>
+      <form class="mb-1 mt-6 flex">
+        <label for="email" class="mt-2">Email</label>
+        <input
+          id="email"
+          type="email"
+          class="border-zinc-600 border-2 rounded-xl p-2 hover:border-violet-500 ml-12 focus:outline-none focus:border-violet-300"
+        />
+      </form>
+      <form class="mb-4 flex">
+        <label for="password" class="mt-2">Password</label>
+        <input
+          id="password"
+          type="password"
+          class="border-zinc-600 border-2 p-2 hover:border-violet-500 focus:outline-none focus:border-violet-300 rounded-xl ml-4"
+        />
+      </form>
+      <div class="flex justify-center">
+        <button
+          class="w-40 p-2 border-full bg-violet-500 text-white active:bg-violet-600 hover:bg-violet-400 focus:ring focus:ring-violet-300 rounded-3xl"
+        >
+          Sign In
+        </button>
+        <button
+          class="w-40 p-2 border-full bg-white text-violet-500 hover:bg-violet-100 focus:ring focus:ring-violet-300 focus:text-violet-600 rounded-3xl"
+        >
+          Sign Up
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
